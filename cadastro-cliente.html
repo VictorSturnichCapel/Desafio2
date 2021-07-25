@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/script-cliente.js" defer></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+        <title>Gestão de Cadastro de Produtos e Clientes</title>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="index.html">
+                <h1>Loja Virtual</h1>
+            </a>
+            <form action="#" method="post" id="formulario">
+                <div class="form">
+                    <div class="label-input">
+                        <h3 for="nome">Nome:</h3>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="cpf">CPF:</h3>
+                        <input type="number" name="cpf" id="cpf" placeholder="00000000000" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="email">Email:</h3>
+                        <input type="email" name="email" id="email" placeholder="nome@email.com" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="telefone">Telefone:</h3>
+                        <input type="number" name="telefone" id="telefone" placeholder="DD999999999" class="input" required />
+                    </div>
+                </div>
+                <input type="submit" class="botao" value="Cadastrar Cliente" />
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-clientes">
+
+                </tbody>
+            </table>
+            <a href="index.html">
+                <button class="botao">Voltar</button>
+            </a>
+        </main>
+    </body>
+</html>

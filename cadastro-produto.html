@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Gestão de Cadastro de Produtos e Clientes</title>
+        <script src="js/script-produto.js" defer></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="index.html">
+                <h1>Loja Virtual</h1>
+            </a>
+            <form action="#" method="post" id="formulario">
+                <div class="form">
+                    <div class="label-input">
+                        <h3 for="sku">SKU:</h3>
+                        <input type="text" name="sku" id="sku" placeholder="SKU do Produto" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="nome">Nome:</h3>
+                        <input type="text" name="nome" id="nome" placeholder="Nome do Produto" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="categoria">Categoria:</h3>
+                        <input type="text" name="categoria" id="categoria" placeholder="Categoria do Produto" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="marca">Marca:</h3>
+                        <input type="text" name="marca" id="marca" placeholder="Marca do Produto" class="input" required />
+                    </div>
+                    <div class="label-input">
+                        <h3 for="quantidade">Quantidade:</h3>
+                        <input type="number" name="quantidade" id="quantidade" value="1" min="1" class="input" required />
+                    </div>
+                </div>
+                <input type="submit" class="botao" value="Cadastrar Produto" />
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Marca</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-produtos">
+
+                </tbody>
+            </table>
+            <a href="index.html">
+                <button class="botao">Voltar</button>
+            </a>
+        </div>
+    </body>
+</html>

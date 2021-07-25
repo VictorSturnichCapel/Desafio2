@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eceff2;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.menu{
+    display: inline-block;
+    margin: auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 5%;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu h1{
+    margin-bottom: 30px;
+}
+.botao{
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.botao:hover{
+    background-color: rgb(9, 184, 62);
+    color: #fff;
+    transition: 0.5s;
+    border: 0px;
+}
+.form{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form .label-input{
+    display: inline-block;
+    text-align: justify;
+}
+.form .label-input h3{
+    display: block;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+.swal-footer{
+    text-align: center;
+}
